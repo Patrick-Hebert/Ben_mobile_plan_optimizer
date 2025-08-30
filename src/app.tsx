@@ -103,6 +103,19 @@ interface ParsedBill {
   unusedAddOns: string[];
 }
 
+interface Plan {
+  id: string;
+  carrier: string;
+  plan: string;
+  price: number;
+  perLine: number;
+  dataCapGB: string | number;
+  hotspotGB: number;
+  intl: string;
+  perks: string[];
+  networkScore: number;
+}
+
 // ----------------------------------------------
 // Fake back-end stubs (replace with real API calls)
 // ----------------------------------------------
